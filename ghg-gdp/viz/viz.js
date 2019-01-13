@@ -1,6 +1,6 @@
-var margin = {top: 30, right: 40, bottom: 30, left: 70},
-    width = 600 - margin.left - margin.right,
-    height = 270 - margin.top - margin.bottom;
+var margin = {top: 30, right: 30, bottom: 30, left: 70},
+    width = 700 - margin.left - margin.right,
+    height = 400 - margin.top - margin.bottom;
 
 var parseDate = d3.time.format("%Y-%m-%d").parse;
 
@@ -75,6 +75,7 @@ d3.csv("ghg-gdp-ca.csv", function(error, data) {
       .attr("x",0 - (height / 2))
       .attr("dy", "1em")
       .style("text-anchor", "middle")
+      .style("fill", "steelblue")
       .text("GDP per Capita");  
 
     svg.append("g")             
@@ -85,10 +86,11 @@ d3.csv("ghg-gdp-ca.csv", function(error, data) {
 
     svg.append("text")       // right y axis label
       .attr("transform", "rotate(-90)")
-      .attr("y", margin.right - 0)
-      .attr("x",(height / 2))
-      .attr("dy", "1em")
+      .attr("y", margin.right)
+      .attr("x", 0 - (height / 2))
+      .attr("dy", "47em")
       .style("text-anchor", "middle")
+      .style("fill", "red")
       .text("Carbon Dioxide Emissions");  
 
 });
