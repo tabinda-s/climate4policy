@@ -39,7 +39,7 @@ var svg1 = d3.select("#area1")
               "translate(" + margin.left + "," + margin.top + ")");
 
 // Get the data
-d3.csv("ghg-gdp-ca.csv", function(error, data) {
+d3.csv("./ghg-gdp/scripts/ghg-gdp-ca.csv", function(error, data) {
     data.forEach(function(d) {
         d.year = parseDate(d.year);
         d.gdp = +d.gdp;
@@ -106,7 +106,7 @@ var svg2 = d3.select("#area2")
               "translate(" + margin.left + "," + margin.top + ")");
 
 // Get the data
-d3.csv("ghg-gdp-wa.csv", function(error, data) {
+d3.csv("./ghg-gdp/scripts/ghg-gdp-wa.csv", function(error, data) {
     data.forEach(function(d) {
         d.year = parseDate(d.year);
         d.gdp = +d.gdp;
