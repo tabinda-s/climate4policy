@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Greenhouse Gas Emissions and Economic Growth</title>
+	<link href="./ghg-gdp/styles/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 
@@ -12,19 +13,21 @@
 
 <h2>Washington</h2>
 <h3>[Typical story: economic growth with GHG increases]</h3>
-<img src="./ghg-gdp/ghg-gdp-wa.png" alt="Greenhouse gas emissions vs GDP per capita in Washington">
+<div id="area2"></div>
+
 
 <h2>California</h2>
 <h3>[New reality: economic growth decoupled from GHG increases]</h3>
-<img src="./ghg-gdp/ghg-gdp-ca.png" alt="Greenhouse gas emissions vs GDP per capita in California">
+<div id="area1"></div>
 
 <p>
-	[Comparison tool with various states and/or countries]
-	<br>
-	D3 ideas: <a href="https://bl.ocks.org/d3noob/814a2bcb3e7d8d8db74f36f77c8e6b7f">Multi-axis line chart</a> <a href="http://bl.ocks.org/DStruths/9c042e3a6b66048b5bd4">Multi-series selector</a> <a href="http://bl.ocks.org/jhubley/17aa30fd98eb0cc7072f">Dropdown selector</a>
+	[Update to more dynamic comparison tool with various states and/or countries]
 </p>
 
 <p>[Climate change mitigation and adaptation will be expensive. Even without considering the long-term benefits of these investments, making these investments today need <strong>not</strong> necessarily hamper economic growth.]</p>
+
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="./ghg-gdp/scripts/viz.js"></script>
 
 </body>
 </html>
