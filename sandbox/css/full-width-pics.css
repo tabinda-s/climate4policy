@@ -6,6 +6,13 @@
 
 body {
   padding-top: 54px;
+  background-color:#000;
+  color: #E8E8E8;
+}
+
+img {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
 }
 
 @media (min-width: 992px) {
@@ -14,10 +21,26 @@ body {
   }
 }
 
+.title {
+	height: 85vh;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+#homebox {
+	background: rgba(0,0,0,0.4);
+	padding: 20px;
+}
+
 .bg-image-full {
   background: no-repeat center center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
+  -webkit-filter: grayscale(40%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(40%);
 }
