@@ -21,6 +21,18 @@ img {
   }
 }
 
+a {
+  color: #6e8fb2;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+a:hover {
+  color: inherit;
+  text-decoration: underline;
+}
+
 .title {
 	height: 85vh;
 	display: table-cell;
