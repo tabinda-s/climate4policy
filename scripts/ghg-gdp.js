@@ -23,6 +23,7 @@ var yScaleRight = d3.scale.linear()
 // 40 Custom DDV colors 
 var color = d3.scale.ordinal().range(["#48A36D",  "#e60000",  "#64B98C", "#72C39B", "#80CEAA", "#80CCB3", "#7FC9BD", "#7FC7C6", "#7EC4CF", "#7FBBCF", "#7FB1CF", "#80A8CE", "#809ECE", "#8897CE", "#8F90CD", "#9788CD", "#9E81CC", "#AA81C5", "#B681BE", "#C280B7", "#CE80B0", "#D3779F", "#D76D8F", "#DC647E", "#E05A6D", "#E16167", "#E26962", "#E2705C", "#E37756", "#E38457", "#E39158", "#E29D58", "#4785b8", "#E0B15B", "#DFB95C", "#DDC05E", "#DBC75F", "#E3CF6D", "#EAD67C", "#F2DE8A"]);  
 
+
 var xAxis = d3.svg.axis()
     .scale(xScale)
     .orient("bottom");   
@@ -273,7 +274,7 @@ var allgroups = [
                 ]
 
 
-d3.csv("../data/ghg-gdp-data.csv", function(error, data) { 
+d3.csv("../data/ghg-gdp/ghg-gdp-data.csv", function(error, data) { 
   color.domain(d3.keys(data[0]).filter(function(key) { // Set the domain of the color ordinal scale to be all the csv headers except "date", matching a color to an issue
     return key !== "year"; 
   }));
@@ -460,7 +461,6 @@ var selector = d3.select("#dropdown")
     });
 
 d3.select("#stateselector")
-
   .on("change", function(d) {
 
 
