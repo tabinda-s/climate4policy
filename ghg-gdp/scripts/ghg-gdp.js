@@ -52,7 +52,7 @@ var lineRight = d3.svg.line()
 
 var maxY; // Defined later to update yAxis
 
-var svg = d3.select("body").append("svg")
+var svg = d3.select("#ghg-gdp-area").append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom) //height + margin.top + margin.bottom
   .append("g")
@@ -449,9 +449,9 @@ issue.append("path")
 // draw legend
 var legendSpace = 100 / categoryGroups.length; // 450/number of issues (ex. 40)    
 
-var selector = d3.select("body")
+var selector = d3.select("#dropdown")
     .append("select")
-    .attr("id", "cityselector")
+    .attr("id", "stateselector")
     .selectAll("option")
     .data(allgroups)
     .enter().append("option")
@@ -460,7 +460,7 @@ var selector = d3.select("body")
       return d;
     });
 
-d3.select("#cityselector")
+d3.select("#stateselector")
   .on("change", function(d) {
 
 
