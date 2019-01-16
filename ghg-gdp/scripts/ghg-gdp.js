@@ -21,7 +21,7 @@ var yScaleRight = d3.scale.linear()
 
 
 // 40 Custom DDV colors 
-var color = d3.scale.ordinal().range(["#48A36D",  "#56AE7C",  "#64B98C", "#72C39B", "#80CEAA", "#80CCB3", "#7FC9BD", "#7FC7C6", "#7EC4CF", "#7FBBCF", "#7FB1CF", "#80A8CE", "#809ECE", "#8897CE", "#8F90CD", "#9788CD", "#9E81CC", "#AA81C5", "#B681BE", "#C280B7", "#CE80B0", "#D3779F", "#D76D8F", "#DC647E", "#E05A6D", "#E16167", "#E26962", "#E2705C", "#E37756", "#E38457", "#E39158", "#E29D58", "#E2AA59", "#E0B15B", "#DFB95C", "#DDC05E", "#DBC75F", "#E3CF6D", "#EAD67C", "#F2DE8A"]);  
+var color = d3.scale.ordinal().range(["#48A36D",  "#e60000",  "#64B98C", "#72C39B", "#80CEAA", "#80CCB3", "#7FC9BD", "#7FC7C6", "#7EC4CF", "#7FBBCF", "#7FB1CF", "#80A8CE", "#809ECE", "#8897CE", "#8F90CD", "#9788CD", "#9E81CC", "#AA81C5", "#B681BE", "#C280B7", "#CE80B0", "#D3779F", "#D76D8F", "#DC647E", "#E05A6D", "#E16167", "#E26962", "#E2705C", "#E37756", "#E38457", "#E39158", "#E29D58", "#4785b8", "#E0B15B", "#DFB95C", "#DDC05E", "#DBC75F", "#E3CF6D", "#EAD67C", "#F2DE8A"]);  
 
 
 var xAxis = d3.svg.axis()
@@ -353,7 +353,7 @@ svg.append("g")
 
 svg.append("g")
     .attr("class", "y axis")
-    .style("fill", "#56AE7C")
+    .style("fill", "#e60000")
     .call(yAxis)
   .append("text")
     .attr("transform", "rotate(-90)")
@@ -375,7 +375,7 @@ svg.append("g")
 svg.append("g")       
       .attr("class", "y axis right")  
       .attr("transform", "translate(" + width + " ,0)") 
-      .style("fill", "#E2AA59")   
+      .style("fill", "#4785b8")   
       .call(yAxisRight)    
       .append("text")
     .attr("transform", "rotate(-90)")
@@ -420,7 +420,7 @@ issue.append("path")
 
       var groupname =Object.keys(d)[0]
       var innerGroup = d[groupname][0]
-      return d3.rgb("#48A36D"); });
+      return d3.rgb("#e60000"); });
 
 //Add second path for right y axis
 issue.append("path")
@@ -443,7 +443,7 @@ issue.append("path")
   .style("stroke", function(d) { 
 
     var goupname =Object.keys(d)[0]
-    return d3.rgb("#E2AA59") });
+    return d3.rgb("#4785b8") });
 
 
 // draw legend
