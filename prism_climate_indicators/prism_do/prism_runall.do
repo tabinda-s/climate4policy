@@ -1,7 +1,7 @@
 cap cd "~/code4policy/Climate4Policy/prism_climate_indicators/prism_do/"
 
 
-do prism0_10.do
+do prism_cleaning_0_10v3.do
 
 cap cd "~/code4policy/Climate4Policy/prism_climate_indicators/prism_do/"
 
