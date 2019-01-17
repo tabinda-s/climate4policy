@@ -13,9 +13,6 @@
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Special styles for GHG-GDP D3 viz, will try to consolidate -->
-    <link href="./styles/style-ghg-gdp.css" rel="stylesheet" type="text/css">
-
     <!-- Custom styles for this template -->
     <link href="css/full-width-pics.css" rel="stylesheet">
 
@@ -72,18 +69,14 @@
       </div>
     </header>
 
-    <!-- Content section -->
-   <!--  <section class="py-5">
+    <!-- Black space filler -->
+    <section class="py-5">
       <div class="container">
-        <h1>Climate Change in California</h1>
-        <p class="lead">Climate change has become somewhat of a taboo subject in America and yet continues to progress while we are at a political standstill. Last year, America’s carbon dioxide emissions <a href="https://www.nytimes.com/2019/01/08/climate/greenhouse-gas-emissions-increase.html">rose by 3.4%</a> in the second largest gain since 1996. As the second largest greenhouse gas emitter in the world, the United States plays a major role in making or breaking the global commitment in the Paris Agreement (to which, contrary to popular belief, the United States href="https://lawdigitalcommons.bc.edu/lsfp/1122/">is still a party</a> to keep warming within 2 degrees celsius above pre-industrial levels. Already, oceans are <a href= “https://www.washingtonpost.com/weather/2019/01/11/oceans-are-warming-faster-than-we-thought-scientists-suggest-we-brace-impact/?utm_term=.b51be52c6869”>warming faster than expected </a>and many scientists worry that we are on track for irreversible <a href= “https://www.theguardian.com/environment/2018/oct/09/tipping-points-could-exacerbate-climate-crisis-scientists-fear”> tipping points </a> if we do not abate emissions quickly. 
-
-        These statements can feel big, abstract, and intractable to many citizens and yet, many climate change policy experts acknowledge that it is <a href = “https://www.climatechangecommunication.org/its-solvable/”> solvable </a>. We have chosen to show, through the case of California, that it is in the best interest of the country to make major investments in climate change mitigation and adaptation and that, by doing so, we need not undermine the economy. Property damages from fires and sea level rises as well as public health risks from extreme temperatures make climate change too costly to ignore even if we do not consider global costs. Below we first will show how California has changed over the recent years and then discuss climate-induced hazards and projected costs. We will conclude by proposing an alternate way forward. </p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, suscipit, rerum quos facilis repellat architecto commodi officia atque nemo facere eum non illo voluptatem quae delectus odit vel itaque amet.</p>
+        <p></p>
       </div>
-    </section> -->
+    </section>
 
-    <!-- Image Section - set the background image for the header in the line below -->
+    <!-- Image Section -->
     <section class="py-5 bg-image-full" style="background-image: url('https://images.unsplash.com/photo-1519606519665-d3d1e0c3f161?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80');" id="indicators">
       <!-- Put anything you want here! There is just a spacer below for demo purposes! -->
       <div style="height: 200px;"></div>
@@ -202,9 +195,8 @@
       </div>
     </section>
 
-    <!-- Image Section - set the background image for the header in the line below -->
+    <!-- Image Section -->
     <section class="py-5 bg-image-full" style="background-image: url('https://images.unsplash.com/photo-1522790217236-85607880539a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80');">
-      <!-- Put anything you want here! There is just a spacer below for demo purposes! -->
       <div style="height: 200px;" id="wildfire"></div>
     </section>
 
@@ -279,9 +271,8 @@
       </div>
     </section>
 
-    <!-- Image Section - set the background image for the header in the line below -->
+    <!-- Image Section -->
     <section class="py-5 bg-image-full" style="background-image: url('https://images.unsplash.com/photo-1517141772911-756dc840a94f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1488&q=80');">
-      <!-- Put anything you want here! There is just a spacer below for demo purposes! -->
       <div style="height: 200px;" id="costs"></div>
     </section>
 
@@ -292,15 +283,16 @@
         <p class="lead">Climate change will have significant economic costs without further mitigation and adaptation.</p>
         <p>The <a href="http://www.climateassessment.ca.gov/state/docs/20190116-StatewideSummary.pdf">Fourth California Climate Change Assessment</a> included estimates of direct economic costs California will face by the middle of the century:</p>
         
-        <table style="text-align:center;" cellpadding="10">
+        <!-- Ideally would move styling completely to CSS, but table styling and icon size don't seem to be working -->
+        <table style="text-align: center;" cellpadding="10">
           <tr>
-            <td><i class="material-icons" style="vertical-align: bottom; color: rgba(255, 255, 255, 1);font-size: 48px;">local_hospital</i>
+            <td><i class="material-icons" id="bigicon" style="font-size: 48px;">local_hospital</i>
             </td>
-            <td><i class="material-icons" style="vertical-align: bottom; color: rgba(255, 255, 255, 1);font-size: 48px;">flash_on</i>
+            <td><i class="material-icons" id="bigicon" style="font-size: 48px;">flash_on</i>
             </td>
-            <td><i class="material-icons" style="vertical-align: bottom; color: rgba(255, 255, 255, 1);font-size: 48px;">format_color_reset</i>
+            <td><i class="material-icons" id="bigicon" style="font-size: 48px;">format_color_reset</i>
             </td>
-            <td><i class="material-icons" style="vertical-align: bottom; color: rgba(255, 255, 255, 1);font-size: 48px;">terrain</i>
+            <td><i class="material-icons" id="bigicon" style="font-size: 48px;">terrain</i>
             </td>
           </tr>
           <tr>
@@ -326,17 +318,15 @@
         <p>The state of California has begun taking steps to address these challenges through more aggressive regulation and policies that promote investment in mitigation and adaptation. Skeptics argue that this environment is unduly burdensome for businesses and taxpayers who must compete with areas with looser regulations. Historical patterns of development have shown a direct relationship between economic growth and greenhouse gas emissions -- as economic output grows, greenhouse gas emissions grow in tandem. However, this relationship is not set in stone.</p>
 
         <p class="lead">Recent trends show increasing emissions are not requisite for driving growth.</p>
+
+        <!-- Containers for D3 visualization! -->
         <div id="dropdown"></div>
         <div id="ghg-gdp-area"></div>
+
         <p>The data show that many states have successfully decoupled economic growth from greenhouse gas emissions. As GDP per capita increases, carbon dioxide emissions flatten or even decrease. This is true even in more heavily regulated states like California, showing that growth and regulation are not diametrically opposed.</p>
         <p class="lead">Adaptation and mitigation for the future can successfully coexist with growth in the present. Proactively combatting the effects of climate change is the smart thing to do -- both today and tomorrow.</p>
-        <a href="#top">
-            <button type="button" class="btn btn-default btn-md"><i class="material-icons" style="vertical-align: bottom;">keyboard_arrow_up</i> Home</button>
-        </a>
-      </div>
-    </section>
-
-    <a href="#sealevel">
+        <a href="#sealevel">
+            <button type="button" class="btn btn-default btn-md"><i class="material-icons" style="vertical-align: bottom;">keyboard_arrow_down</i> Hazards: Sea Level Rise</button>
         </a>
       </div>
     </section>
@@ -374,9 +364,10 @@
     <footer class="py-4 bg-dark">
       <div class="container">
         <p class="m-0 text-center text-white">
-          Ashlyn Kong | Tabinda Siddiqi | Danny Tobin | Wen Wang<br>
+          <a href="https://www.linkedin.com/in/ashlynkong/" target="_blank">Ashlyn Kong</a> | <a href="https://www.linkedin.com/in/tabindasiddiqi" target="_blank">Tabinda Siddiqi</a> | <a href="https://www.linkedin.com/in/dannytobin/" target="_blank">Danny Tobin</a> | <a href="https://www.wenwang.work" target="_blank">Wen Wang</a><br>
           DPI 691M @ <a href="https://www.hks.harvard.edu/" target="_blank">Harvard Kennedy School</a>
         </p>
+        <p class="m-0 text-center text-white">Thanks to <a href="https://unsplash.com/" target="_blank">Unsplash</a> & <a href="https://startbootstrap.com/" target="_blank">Start Bootstrap</a></p>
       </div>
       <!-- /.container -->
     </footer>

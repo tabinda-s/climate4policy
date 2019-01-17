@@ -273,7 +273,7 @@ var allgroups = [
                   "Wyoming"
                 ]
 
-// COMMENT OUT STATIC URL
+// COMMENT OUT STATIC URL WHEN VIEWING LOCALLY (my computer blocks the connection)
 d3.csv("https://tabinda-s.github.io/climate4policy/data/ghg-gdp/ghg-gdp-data.csv", function(error, data) { 
 // for debug/dev purposes, revert to relative path
 // d3.csv("../data/ghg-gdp/ghg-gdp-data.csv", function(error, data) {   
