@@ -92,34 +92,53 @@
       <div class="container">
         <h1>Climate Change Indicators</h1>
         <h2> <i> Shifts in Climate Indicators Show How the State has been Affected by Climate change</i> </h2>
-        <p class="lead">California is getting warmer overall. While we only have a snapshot of data, we can still easily observe the gradual change. Normalizing this by county, we observe a mean change of 1.16 degrees F for the time period. This effect is statistically significant at the 10% level.</p>
-        <img class="climate_images" src="./final_analysis/graphics/reg_meantemp.png" alt="Average temperature change in California across time period">
-        <p>However, this overall trend hides substantial heterogeneity as some counties and some months have seen larger changes than others. </p>
-
+        <p>California is getting warmer overall. While we only have a snapshot of data, we can still easily observe the gradual change. Normalizing this by county, we observe a mean change of 1.16 degrees F for the time period. This effect is statistically significant at the 10% level.</p>
+        <p>However, this overall trend hides substantial heterogeneity as some counties and some months have seen larger changes than others. </p> 
         
-        <iframe id="datawrapper-chart-5q41o" src="//datawrapper.dwcdn.net/5q41o/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important;" height="400"></iframe><script type="text/javascript">if("undefined"==typeof window.datawrapper)window.datawrapper={};window.datawrapper["5q41o"]={},window.datawrapper["5q41o"].iframe=document.getElementById("datawrapper-chart-5q41o"),window.addEventListener("message",function(a){if("undefined"!=typeof a.data["datawrapper-height"])for(var b in a.data["datawrapper-height"])if("5q41o"==b)window.datawrapper["5q41o"].iframe.style.height=a.data["datawrapper-height"][b]+"px"});</script>
-
-        <p> This interactive map shows how some counties, like Inyo have seen over 4 degree average temperature changes in this time period, other counties like Sonoma have seen a small decrease in average temperature. </p>
+        <div class="box"> 
+        <img id = "topscatter" class="climate_images" src="./final_analysis/rgraphs/reg_meantemp.png" alt="Average temperature change in California across time period"> 
+        <iframe id="datawrapper-chart-5q41o" src="//datawrapper.dwcdn.net/5q41o/2/" scrolling="no" frameborder="0" style="width: 0; float:right; min-width: 70% !important;" height="400"></iframe><script type="text/javascript">if("undefined"==typeof window.datawrapper)window.datawrapper={};window.datawrapper["5q41o"]={},window.datawrapper["5q41o"].iframe=document.getElementById("datawrapper-chart-5q41o"),window.addEventListener("message",function(a){if("undefined"!=typeof a.data["datawrapper-height"])for(var b in a.data["datawrapper-height"])if("5q41o"==b)window.datawrapper["5q41o"].iframe.style.height=a.data["datawrapper-height"][b]+"px"});</script></div>
+        
 
         <br>
+        <div class="spacer"></div>
+        <br>
+        <p> The interactive map shows how some counties, like Inyo have seen over 4 degree average temperature changes in this time period, other counties like Sonoma have seen a small decrease in average temperature. </p>
 
-        <h2> Showing Mean and Max Monthly Temperature Changes a Different Way... </h2>
+        <h2 id= "firstheadline"> Showing Mean and Max Monthly Temperature Changes a Different Way... </h2>
+        <img id="maxmean" src="./final_analysis/rgraphs/maxmeancompare.png" alt="Average temperature change in California across time period"> 
 
-        <iframe id="datawrapper-chart-Uqt2r" src="//datawrapper.dwcdn.net/Uqt2r/2/" scrolling="no" frameborder="0" style="width: 0; background-color: white; min-width: 100% !important;" height="1444"></iframe><script type="text/javascript">if("undefined"==typeof window.datawrapper)window.datawrapper={};window.datawrapper["Uqt2r"]={},window.datawrapper["Uqt2r"].iframe=document.getElementById("datawrapper-chart-Uqt2r"),window.addEventListener("message",function(a){if("undefined"!=typeof a.data["datawrapper-height"])for(var b in a.data["datawrapper-height"])if("Uqt2r"==b)window.datawrapper["Uqt2r"].iframe.style.height=a.data["datawrapper-height"][b]+"px"});</script>
-
+        <!-- <iframe id="datawrapper-chart-Uqt2r" src="//datawrapper.dwcdn.net/Uqt2r/2/" scrolling="no" frameborder="0" style="width: 0; background-color: black; min-width: 100% !important;" height="1444"></iframe><script type="text/javascript">if("undefined"==typeof window.datawrapper)window.datawrapper={};window.datawrapper["Uqt2r"]={},window.datawrapper["Uqt2r"].iframe=document.getElementById("datawrapper-chart-Uqt2r"),window.addEventListener("message",function(a){if("undefined"!=typeof a.data["datawrapper-height"])for(var b in a.data["datawrapper-height"])if("Uqt2r"==b)window.datawrapper["Uqt2r"].iframe.style.height=a.data["datawrapper-height"][b]+"px"});</script>
+ -->
 
         <div> </div>
         <p> This visual shows even more clearly how different counties have experience different levels of temperature changes. Climate change research indicates that extreme temperatures (very hot days) will become more common as well as the mean temperature increasing. This graphic shows that the hottest day per month for different counties also got hotter on average across the time period, but this shift was not in perfect lockstep with the shift in the mean temperature. Other visuals can help us make sense of this finding. </p>
 
-        <h2> Precipitation </h2>
-        <img class="climate_images" src="./final_analysis/output/ca_precip.png" alt="Average change to mean temperature per month per county in California">
-        <p> While California got drier during the time period, this trend is less noticable than the change in heat (though almost universal across counties). However, one can see that places like Los Angeles county, which receives very little rainfall (get yearly average for the county) </p>
+        
+        <div class="clearfix">
+          <div class="boxformaps">
+          <h2> Precipitation </h2>
+          <img class="climate_images" src="./final_analysis/output/ca_precip.png" alt="Average change to mean temperature per month per county in California">
+          </div>
+          <div class="boxformaps">
+          <h2> Max Temp </h2>
+          <img class="climate_images" src="./final_analysis/output/ca_maxtemp.png" alt="Greenhouse gas emissions vs GDP per capita in California"> 
+          </div>
+          
+        </div>
+        
+        
+        <div class="clearfix"> </div>
+    <br clear="left"/>
+      <p> While California got drier during the time period, this trend is less noticable than the change in heat (though almost universal across counties). However, one can see that places like Los Angeles county, which receives very little rainfall (get yearly average for the county) </p>
 
-        <p> Climate change does not inherently led to drier climates, but hotter temperatures means more evaporation and that the air can store more water vapor before it must release the water in precipitation events. These means that storms are often more intense when they happen. In addition, the change to the climate has interacted with other climate phenomena in a way that has exacerbated drought in some prone areas. For example, California has suffered recent droughts that have been linked to climate change (cite). </p>
+      <p> Climate change does not inherently led to drier climates, but hotter temperatures means more evaporation and that the air can store more water vapor before it must release the water in precipitation events. These means that storms are often more intense when they happen. In addition, the change to the climate has interacted with other climate phenomena in a way that has exacerbated drought in some prone areas. For example, California has suffered recent droughts that have been linked to climate change (cite). </p>
+
+       
 
         <h2>Average Max Temperature Change</h2>
-        <h3>[The max temp...]</h3>
-        <img class="climate_images" src="./final_analysis/output/ca_maxtemp.png" alt="Greenhouse gas emissions vs GDP per capita in California">
+        
+        
         <div> </div>
 
         <p> The extreme heat map perhaps best exposed the substantial heterogeneity across California. Inland and southern counties experienced much hotter maximum monthly temperatures, while some counties around the bay area actually saw their hottest temperatures decrease. Following the Mark Twain quote “The coldest winter I ever spent was a summer in San Francisco”, one reason for this surprising trend could be due to fog. The Bay Area receives a lot of fog during high temperatures which is a natural safeguard against high temperatures. Purely speculatively, one could imagine that with a warmer ocean and more extreme heat, that this area is seeing the cooling mechanism of fog get set off more often on would be max heat days. </p>
@@ -227,7 +246,7 @@
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
+    <script src="scripts/datawrapper-style.js"></script>
   </body>
 
 </html>
