@@ -43,9 +43,51 @@ a:hover {
 	padding-right: 50px;
 }
 
+div.spacer
+{
+    font-size: 0; 
+    height: 10px;
+    line-height: 0;
+}
+
 #homebox {
 	background: rgba(0,0,0,0.4);
 	padding: 20px;
+  padding-bottom: 10px;
+}
+
+#topscatter { 
+  float: left;
+  width: 30%;
+}
+
+#firstheadline {
+  clear: none;
+}
+
+#maxmean {
+  filter: none;
+  margin: 0 auto;
+  width:70%;
+}
+
+.img-container {
+  float: left;
+  width: 33.33%; /* three containers (use 25% for four, and 50% for two, etc) */
+  padding: 5px; /* if you want space between the images */
+}
+
+.boxformaps {
+  float: left;
+  width: 40%;
+  padding: 5px;
+  padding-bottom: 10px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 .bg-image-full {
@@ -63,4 +105,3 @@ a:hover {
   filter: none;
   margin: 0 auto;
 }
-
