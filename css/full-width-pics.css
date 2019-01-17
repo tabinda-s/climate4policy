@@ -18,7 +18,7 @@ img {
 
 @media (min-width: 992px) {
   body {
-    padding-top: 56px;
+    padding-top: 54px;
   }
 }
 
@@ -59,7 +59,7 @@ a:hover {
 }
 
 .climate_images {
-  width: 80%;
+  width: 50%;
   filter: none;
   margin: 0 auto;
 }
