@@ -350,6 +350,7 @@ yScaleRight.domain([0, maxYRight
 svg.append("g")
     .attr("class", "x axis")
     .attr("transform", "translate(0," + height + ")")
+    .style("fill","#fff")
     .call(xAxis);
   
 
