@@ -105,3 +105,27 @@ div.spacer
   filter: none;
   margin: 0 auto;
 }
+
+
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.twocolumnimages {
+  float: left;
+  filter: none;
+  width: 50%;
+  padding: 1px;
+}
+
+/* Clear floats after image containers */
+.rowtoclear::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.blockimages {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
