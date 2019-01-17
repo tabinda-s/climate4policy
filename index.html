@@ -13,8 +13,6 @@
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- <link href="./styles/style-ghg-gdp.css" rel="stylesheet" type="text/css"> -->
-
     <!-- Custom styles for this template -->
     <link href="css/full-width-pics.css" rel="stylesheet">
 
@@ -78,7 +76,7 @@
       </div>
     </section>
 
-    <!-- Image Section - set the background image for the header in the line below -->
+    <!-- Image Section -->
     <section class="py-5 bg-image-full" style="background-image: url('https://images.unsplash.com/photo-1519606519665-d3d1e0c3f161?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80');" id="indicators">
       <!-- Put anything you want here! There is just a spacer below for demo purposes! -->
       <div style="height: 200px;"></div>
@@ -204,7 +202,7 @@
       </div>
     </section>
 
-    <!-- Image Section - set the background image for the header in the line below -->
+    <!-- Image Section -->
     <section class="py-5 bg-image-full" style="background-image: url('https://images.unsplash.com/photo-1494652434328-a190cf138b93?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1568&q=80');">
       <!-- Put anything you want here! There is just a spacer below for demo purposes! -->
       <div style="height: 200px;" id="sealevel"></div>
@@ -233,9 +231,8 @@
       </div>
     </section>
 
-    <!-- Image Section - set the background image for the header in the line below -->
+    <!-- Image Section -->
     <section class="py-5 bg-image-full" style="background-image: url('https://images.unsplash.com/photo-1517141772911-756dc840a94f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1488&q=80');">
-      <!-- Put anything you want here! There is just a spacer below for demo purposes! -->
       <div style="height: 200px;" id="costs"></div>
     </section>
 
@@ -246,15 +243,16 @@
         <p class="lead">Climate change will have significant economic costs without further mitigation and adaptation.</p>
         <p>The <a href="http://www.climateassessment.ca.gov/state/docs/20190116-StatewideSummary.pdf">Fourth California Climate Change Assessment</a> included estimates of direct economic costs California will face by the middle of the century:</p>
         
-        <table style="text-align:center;" cellpadding="10">
+        <!-- Ideally would move styling completely to CSS, but table styling and icon size don't seem to be working -->
+        <table style="text-align: center;" cellpadding="10">
           <tr>
-            <td><i class="material-icons" style="vertical-align: bottom; color: rgba(255, 255, 255, 1);font-size: 48px;">local_hospital</i>
+            <td><i class="material-icons" id="bigicon" style="font-size: 48px;">local_hospital</i>
             </td>
-            <td><i class="material-icons" style="vertical-align: bottom; color: rgba(255, 255, 255, 1);font-size: 48px;">flash_on</i>
+            <td><i class="material-icons" id="bigicon" style="font-size: 48px;">flash_on</i>
             </td>
-            <td><i class="material-icons" style="vertical-align: bottom; color: rgba(255, 255, 255, 1);font-size: 48px;">format_color_reset</i>
+            <td><i class="material-icons" id="bigicon" style="font-size: 48px;">format_color_reset</i>
             </td>
-            <td><i class="material-icons" style="vertical-align: bottom; color: rgba(255, 255, 255, 1);font-size: 48px;">terrain</i>
+            <td><i class="material-icons" id="bigicon" style="font-size: 48px;">terrain</i>
             </td>
           </tr>
           <tr>
@@ -280,8 +278,11 @@
         <p>The state of California has begun taking steps to address these challenges through more aggressive regulation and policies that promote investment in mitigation and adaptation. Skeptics argue that this environment is unduly burdensome for businesses and taxpayers who must compete with areas with looser regulations. Historical patterns of development have shown a direct relationship between economic growth and greenhouse gas emissions -- as economic output grows, greenhouse gas emissions grow in tandem. However, this relationship is not set in stone.</p>
 
         <p class="lead">Recent trends show increasing emissions are not requisite for driving growth.</p>
+
+        <!-- Containers for D3 visualization! -->
         <div id="dropdown"></div>
         <div id="ghg-gdp-area"></div>
+
         <p>The data show that many states have successfully decoupled economic growth from greenhouse gas emissions. As GDP per capita increases, carbon dioxide emissions flatten or even decrease. This is true even in more heavily regulated states like California, showing that growth and regulation are not diametrically opposed.</p>
         <p class="lead">Adaptation and mitigation for the future can successfully coexist with growth in the present. Proactively combatting the effects of climate change is the smart thing to do -- both today and tomorrow.</p>
         <a href="#top">
@@ -297,6 +298,7 @@
           <a href="https://www.linkedin.com/in/ashlynkong/" target="_blank">Ashlyn Kong</a> | <a href="https://www.linkedin.com/in/tabindasiddiqi" target="_blank">Tabinda Siddiqi</a> | <a href="https://www.linkedin.com/in/dannytobin/" target="_blank">Danny Tobin</a> | <a href="https://www.wenwang.work" target="_blank">Wen Wang</a><br>
           DPI 691M @ <a href="https://www.hks.harvard.edu/" target="_blank">Harvard Kennedy School</a>
         </p>
+        <p class="m-0 text-center text-white">Thanks to <a href="https://unsplash.com/" target="_blank">Unsplash</a> & <a href="https://startbootstrap.com/" target="_blank">Start Bootstrap</a></p>
       </div>
       <!-- /.container -->
     </footer>

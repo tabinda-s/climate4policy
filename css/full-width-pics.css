@@ -106,6 +106,20 @@ div.spacer
   margin: 0 auto;
 }
 
+/* Play with this class for centering visuals */
+
+.center-viz {
+  margin: auto;
+}
+
+/* For big, white-colored Google icons */
+
+#bigicon {
+  vertical-align: bottom;
+  color: rgba(255, 255, 255, 1);
+  font-size: 48px;
+}
+
 /* CSS for GHG-GDP D3 viz below */
 
 .axis path,
