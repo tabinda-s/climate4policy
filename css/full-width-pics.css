@@ -18,7 +18,7 @@ img {
 
 @media (min-width: 992px) {
   body {
-    padding-top: 56px;
+    padding-top: 54px;
   }
 }
 
@@ -101,7 +101,7 @@ div.spacer
 }
 
 .climate_images {
-  
+  width: 50%;
   filter: none;
   margin: 0 auto;
 }

@@ -1,4 +1,4 @@
-var margin = {top: 20, right: 200, bottom: 100, left: 50},
+var margin = {top: 20, right: 200, bottom: 50, left: 50},
     margin2 = { top: 430, right: 10, bottom: 20, left: 40 },
     width = 960 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom,
@@ -273,8 +273,10 @@ var allgroups = [
                   "Wyoming"
                 ]
 
-
+// COMMENT OUT STATIC URL
 d3.csv("https://tabinda-s.github.io/climate4policy/data/ghg-gdp/ghg-gdp-data.csv", function(error, data) { 
+// for debug/dev purposes, revert to relative path
+// d3.csv("../data/ghg-gdp/ghg-gdp-data.csv", function(error, data) {   
   color.domain(d3.keys(data[0]).filter(function(key) { // Set the domain of the color ordinal scale to be all the csv headers except "date", matching a color to an issue
     return key !== "year"; 
   }));
@@ -348,6 +350,7 @@ yScaleRight.domain([0, maxYRight
 svg.append("g")
     .attr("class", "x axis")
     .attr("transform", "translate(0," + height + ")")
+    .style("fill","#fff")
     .call(xAxis);
   
 
@@ -361,7 +364,7 @@ svg.append("g")
     .attr("x", -10)
     .attr("dy", "1em")
     .style("text-anchor", "end")
-    .text("co2-CA")
+    .text("Carbon Dioxide Emissions (millions of metric tons)")
     .attr("id", function(d) { 
      
        
@@ -379,11 +382,11 @@ svg.append("g")
       .call(yAxisRight)    
       .append("text")
     .attr("transform", "rotate(-90)")
-    .attr("y", -15)
+    .attr("y", -20)
     .attr("x", -10)
     .attr("dy", "1em")
     .style("text-anchor", "end")
-    .text("gdp-CA")
+    .text("Per Capita Real GDP (chained 2012 dollars)")
     .attr("id", function(d) { 
      
        
@@ -505,7 +508,7 @@ d3.select("#stateselector")
         .transition()
         .call(yAxis)
         .select('#ylabel')
-        .text(innerGroup.name);
+        .text("Carbon Dioxide Emissions (million metric tons)");
 
        // Redefine yAxis domain based on highest y value of categories data with "visible"; true
       yScaleRight.domain([0,maxYRight]);
@@ -513,7 +516,7 @@ d3.select("#stateselector")
         .transition()
         .call(yAxisRight)  
         .select('#ylabelright')
-        .text(innerGroup2.name);
+        .text("Per Capita Real GDP (chained 2012 dollars)");
 
         issue.select(innerGroupName)
         .transition()

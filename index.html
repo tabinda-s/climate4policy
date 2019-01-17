@@ -13,6 +13,9 @@
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Special styles for GHG-GDP D3 viz, will try to consolidate -->
+    <link href="./styles/style-ghg-gdp.css" rel="stylesheet" type="text/css">
+
     <!-- Custom styles for this template -->
     <link href="css/full-width-pics.css" rel="stylesheet">
 
@@ -56,7 +59,6 @@
     </nav>
 
     <!-- Header - set the background image for the header in the line below -->
-    <div id="home"></div>
     <header class="py-5 bg-image-full" style="background-image: url('https://images.unsplash.com/photo-1498429089284-41f8cf3ffd39?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80');">
       <div class="title">
         <div id="homebox">
@@ -71,15 +73,15 @@
     </header>
 
     <!-- Content section -->
-    <section class="py-5">
+   <!--  <section class="py-5">
       <div class="container">
-        <!-- <h1>Climate Change in California</h1>
+        <h1>Climate Change in California</h1>
         <p class="lead">Climate change has become somewhat of a taboo subject in America and yet continues to progress while we are at a political standstill. Last year, America’s carbon dioxide emissions <a href="https://www.nytimes.com/2019/01/08/climate/greenhouse-gas-emissions-increase.html">rose by 3.4%</a> in the second largest gain since 1996. As the second largest greenhouse gas emitter in the world, the United States plays a major role in making or breaking the global commitment in the Paris Agreement (to which, contrary to popular belief, the United States href="https://lawdigitalcommons.bc.edu/lsfp/1122/">is still a party</a> to keep warming within 2 degrees celsius above pre-industrial levels. Already, oceans are <a href= “https://www.washingtonpost.com/weather/2019/01/11/oceans-are-warming-faster-than-we-thought-scientists-suggest-we-brace-impact/?utm_term=.b51be52c6869”>warming faster than expected </a>and many scientists worry that we are on track for irreversible <a href= “https://www.theguardian.com/environment/2018/oct/09/tipping-points-could-exacerbate-climate-crisis-scientists-fear”> tipping points </a> if we do not abate emissions quickly. 
 
         These statements can feel big, abstract, and intractable to many citizens and yet, many climate change policy experts acknowledge that it is <a href = “https://www.climatechangecommunication.org/its-solvable/”> solvable </a>. We have chosen to show, through the case of California, that it is in the best interest of the country to make major investments in climate change mitigation and adaptation and that, by doing so, we need not undermine the economy. Property damages from fires and sea level rises as well as public health risks from extreme temperatures make climate change too costly to ignore even if we do not consider global costs. Below we first will show how California has changed over the recent years and then discuss climate-induced hazards and projected costs. We will conclude by proposing an alternate way forward. </p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, suscipit, rerum quos facilis repellat architecto commodi officia atque nemo facere eum non illo voluptatem quae delectus odit vel itaque amet.</p> -->
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, suscipit, rerum quos facilis repellat architecto commodi officia atque nemo facere eum non illo voluptatem quae delectus odit vel itaque amet.</p>
       </div>
-    </section>
+    </section> -->
 
     <!-- Image Section - set the background image for the header in the line below -->
     <section class="py-5 bg-image-full" style="background-image: url('https://images.unsplash.com/photo-1519606519665-d3d1e0c3f161?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80');" id="indicators">
@@ -181,13 +183,25 @@
 
         In addition, separate research has shown lightning strikes in the western United States are will become more frequent in an altered climate, which bodes poorly for California where wildfires are most often ignited by storms. With higher temperatures, fires are expected to rage hotter and lay scourge to more area. For these reasons, normally-cautious scientists have begun to draw a causal link between climate change and forest fire. With large fires in the state over the past few years, the media has joined the frenzy, proclaiming that California is burning and climate change is the cause.
 
-        Above, we showed that California has gotten dryer and hotter especially in the areas of the Mountains where many of the state’s forests lie. Below we have taken a separate data source to show how those changes have corresponded to fire trends.
+        Above, we showed that California has gotten dryer and hotter especially in the areas of the Mountains where many of the state’s forests lie. Below we have taken a separate data source to show how those changes have corresponded to fire trends. </p>
 
-        Acres burned and structures damaged due to wildfires have witnessed a sharp increase. A look at the data from 1990 - 2018 shows that in 1991 2,900 acres were burned while that number rose to 479, 936 in the last year. Similarly, Similarly, in 2018 nearly 22,000 structures were damaged compared to 636 structures in 1992.
+        <h2> Top Counties Impacted by Fires </h2>
 
-        Wildfires cost the state of California an upward of 3 billion dollars in the year 2015 - a figure that has likely increased in 2018 after the deadly fires in Paradise and Malibu. In 1990, wildfires in California cost $95,707,749 and while it can be argued that inflation over time make the figure in billions look much more intimidating than is true, it is still quite a hefty sum to be dealing with -- one that California’s residents pay for. California’s population of 39 million people contributes about 76 dollars per person to fight wildfires.</p>
+        <p> Acres burned and structures damaged due to wildfires have witnessed a sharp increase in recent years. A look at the data from 1990 - 2018 shows that 2,900 acres were burned due to fires in 1991 while that number rose to 479,936 in the last year. Similarly, 2018 say nearly 22,000 structures damaged compared to 636 structures in 1992. The dashboard below shows top counties in California that are among the worst impacted by fires along with the acres burned and structures destroyed. 
 
-        <div class='tableauPlaceholder' id='viz1547704763955' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ca&#47;CaliWildfiresdashboard&#47;Dashboard&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='CaliWildfiresdashboard&#47;Dashboard' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ca&#47;CaliWildfiresdashboard&#47;Dashboard&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1547704763955');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1000px';vizElement.style.height='827px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+        <i> Click on any one element of the viz and the dashboard will show related stats in various sections. </i></p>
+
+        <div class='tableauPlaceholder' id='viz1547742442619' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ca&#47;CaliWildfiresdashboardupdated&#47;Dashboard&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='CaliWildfiresdashboardupdated&#47;Dashboard' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ca&#47;CaliWildfiresdashboardupdated&#47;Dashboard&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1547742442619');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1000px';vizElement.style.height='827px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+        <p> Data Source: <a href="http://www.fire.ca.gov/communications/downloads/fact_sheets/Top20_Destruction.pdf"> Cal Fire </a> </p>
+
+        <h3> The Cost of Wildfires in California </h3>
+
+        <p> Wildfires cost the state of California an upward of 3 billion dollars in the year 2015 - a figure that has likely increased in 2018 after the deadly fires in Paradise and Malibu. In 1990, wildfires in California cost $95,707,749 and while it can be argued that inflation over time make the figure in billions look much more intimidating than is true, it is still quite a hefty sum to be dealing with -- one that California’s residents pay for. California’s population of 39 million people contributes about 76 dollars per person to fight wildfires. The following visual shows the collective damage caused by fires every year from 1990 - 2016. </p>
+
+        <div class='tableauPlaceholder' id='viz1547742496783' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ca&#47;CaliforniaWildfires-DollarDamage&#47;DollarDamage&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='CaliforniaWildfires-DollarDamage&#47;DollarDamage' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ca&#47;CaliforniaWildfires-DollarDamage&#47;DollarDamage&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1547742496783');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+        <p> Data Source: <a href="http://cdfdata.fire.ca.gov/pub/cdf/images/incidentstatsevents_270.pdf"> Cal Fire </a> </p>
 
 
         <a href="#sealevel">
@@ -206,6 +220,17 @@
     <section class="py-5">
       <div class="container">
         <h1>Hazards: Sea Level Rise</h1>
+        <h2>United States Sea level rise overview: From 2018 to 2100</h2>
+
+        <iframe src="https://vida.io/embed/Ay85wYTmjHhCHyRmF" width="1500" height="1625" seamless frameBorder="0" scrolling="no"></iframe>
+        <li> <a href="https://www.ucsusa.org/global-warming/global-warming-impacts/sea-level-rise-chronic-floods-and-us-coastal-real-estate-implications#.XDzVzc9Kh0s"> Source </a> </li>
+        <iframe src="https://vida.io/embed/WSMYRNiWyuFDvoBDi" width="960" height="1000" seamless frameBorder="0" scrolling="no"></iframe>
+        <ul> 
+        <iframe src="https://datawrapper.dwcdn.net/PsNKc/1/" width="500" height="500" seamless="" frameborder="0" scrolling="no"></iframe>
+        <iframe src="https://datawrapper.dwcdn.net/rYZcT/1/" width="500" height="500" seamless="" frameborder="0" scrolling="no"></iframe>
+
+
+
         <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, suscipit, rerum quos facilis repellat architecto commodi officia atque nemo facere eum non illo voluptatem quae delectus odit vel itaque amet.</p>
         <a href="#costs">
@@ -224,8 +249,47 @@
     <section class="py-5">
       <div class="container">
         <h1>Costs of Climate Change</h1>
-        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, suscipit, rerum quos facilis repellat architecto commodi officia atque nemo facere eum non illo voluptatem quae delectus odit vel itaque amet.</p>
+        <p class="lead">Climate change will have significant economic costs without further mitigation and adaptation.</p>
+        <p>The <a href="http://www.climateassessment.ca.gov/state/docs/20190116-StatewideSummary.pdf">Fourth California Climate Change Assessment</a> included estimates of direct economic costs California will face by the middle of the century:</p>
+        
+        <table style="text-align:center;" cellpadding="10">
+          <tr>
+            <td><i class="material-icons" style="vertical-align: bottom; color: rgba(255, 255, 255, 1);font-size: 48px;">local_hospital</i>
+            </td>
+            <td><i class="material-icons" style="vertical-align: bottom; color: rgba(255, 255, 255, 1);font-size: 48px;">flash_on</i>
+            </td>
+            <td><i class="material-icons" style="vertical-align: bottom; color: rgba(255, 255, 255, 1);font-size: 48px;">format_color_reset</i>
+            </td>
+            <td><i class="material-icons" style="vertical-align: bottom; color: rgba(255, 255, 255, 1);font-size: 48px;">terrain</i>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="lead">$50 to $84 billion</p>
+              <p>Cost of premature mortality due to high temperatures</p>
+            </td>
+            <td>
+              <p class="lead">$1.6 billion per year</p>
+              <p>Increase in energy costs due to increased cooling needs</p>
+            </td>
+            <td>
+              <p class="lead">$1 billion per year</p>
+              <p>Increase in water costs due to shortages</p>
+            </td>
+            <td>
+              <p class="lead">$42 billion</p>
+              <p>Cost of inland mega-floods due to increase in large storms</p>
+            </td>
+          </tr>
+        </table>
+        <br>
+        <p>The state of California has begun taking steps to address these challenges through more aggressive regulation and policies that promote investment in mitigation and adaptation. Skeptics argue that this environment is unduly burdensome for businesses and taxpayers who must compete with areas with looser regulations. Historical patterns of development have shown a direct relationship between economic growth and greenhouse gas emissions -- as economic output grows, greenhouse gas emissions grow in tandem. However, this relationship is not set in stone.</p>
+
+        <p class="lead">Recent trends show increasing emissions are not requisite for driving growth.</p>
+        <div id="dropdown"></div>
+        <div id="ghg-gdp-area"></div>
+        <p>The data show that many states have successfully decoupled economic growth from greenhouse gas emissions. As GDP per capita increases, carbon dioxide emissions flatten or even decrease. This is true even in more heavily regulated states like California, showing that growth and regulation are not diametrically opposed.</p>
+        <p class="lead">Adaptation and mitigation for the future can successfully coexist with growth in the present. Proactively combatting the effects of climate change is the smart thing to do -- both today and tomorrow.</p>
         <a href="#top">
             <button type="button" class="btn btn-default btn-md"><i class="material-icons" style="vertical-align: bottom;">keyboard_arrow_up</i> Home</button>
         </a>
@@ -247,6 +311,9 @@
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="scripts/datawrapper-style.js"></script>
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <script src="./scripts/ghg-gdp.js"></script>
+
   </body>
 
 </html>
