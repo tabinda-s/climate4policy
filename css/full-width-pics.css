@@ -56,6 +56,11 @@ div.spacer
     line-height: 0;
 }
 
+.icontable {
+  text-align:center;
+  margin: 0 auto;
+}
+
 #homebox {
   background: rgba(0,0,0,0.4);
   padding: 20px;
