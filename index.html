@@ -276,68 +276,6 @@
         </a>
       </div>
     </section>
-
-    <!-- Image Section -->
-    <section class="py-5 bg-image-full" style="background-image: url('https://images.unsplash.com/photo-1517141772911-756dc840a94f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1488&q=80');">
-      <div style="height: 200px;" id="costs"></div>
-    </section>
-
-    <!-- Content section -->
-    <section class="py-5">
-      <div class="container">
-        <h1>Costs of Climate Change</h1>
-        <p class="lead">Climate change will have significant economic costs without further mitigation and adaptation.</p>
-        <p>The <a href="http://www.climateassessment.ca.gov/state/docs/20190116-StatewideSummary.pdf">Fourth California Climate Change Assessment</a> included estimates of direct economic costs California will face by the middle of the century:</p>
-        
-        <!-- Ideally would move styling completely to CSS, but table styling and icon size don't seem to be working -->
-        <table style="text-align: center;" cellpadding="10">
-          <tr>
-            <td><i class="material-icons" id="bigicon" style="font-size: 48px;">local_hospital</i>
-            </td>
-            <td><i class="material-icons" id="bigicon" style="font-size: 48px;">flash_on</i>
-            </td>
-            <td><i class="material-icons" id="bigicon" style="font-size: 48px;">format_color_reset</i>
-            </td>
-            <td><i class="material-icons" id="bigicon" style="font-size: 48px;">terrain</i>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p class="lead">$50 to $84 billion</p>
-              <p>Cost of premature mortality due to high temperatures</p>
-            </td>
-            <td>
-              <p class="lead">$1.6 billion per year</p>
-              <p>Increase in energy costs due to increased cooling needs</p>
-            </td>
-            <td>
-              <p class="lead">$1 billion per year</p>
-              <p>Increase in water costs due to shortages</p>
-            </td>
-            <td>
-              <p class="lead">$42 billion</p>
-              <p>Cost of inland mega-floods due to increase in large storms</p>
-            </td>
-          </tr>
-        </table>
-        <br>
-        <p>The state of California has begun taking steps to address these challenges through more aggressive regulation and policies that promote investment in mitigation and adaptation. Skeptics argue that this environment is unduly burdensome for businesses and taxpayers who must compete with areas with looser regulations. Historical patterns of development have shown a direct relationship between economic growth and greenhouse gas emissions -- as economic output grows, greenhouse gas emissions grow in tandem. However, this relationship is not set in stone.</p>
-
-        <p class="lead">Recent trends show increasing emissions are not requisite for driving growth.</p>
-
-        <!-- Containers for D3 visualization! -->
-        <div id="dropdown"></div>
-        <div id="ghg-gdp-area"></div>
-        <p>Data Source: <a href="https://www.eia.gov/environment/emissions/state/" target="_blank">US Energy Information Administration</a>, <a href="https://www.bea.gov/data/gdp/gdp-state" target="_blank">US Bureau of Economic Analysis</a> | Chart Source: <a href="http://bl.ocks.org/jhubley/17aa30fd98eb0cc7072f" target="_blank">1</a>, <a href="http://bl.ocks.org/d3noob/e34791a32a54e015f57d" target="_blank">2</a>
-
-        <p>The data show that many states have successfully decoupled economic growth from greenhouse gas emissions. As GDP per capita increases, carbon dioxide emissions flatten or even decrease. This is true even in more heavily regulated states like California, showing that growth and regulation are not diametrically opposed.</p>
-        <p class="lead">Adaptation and mitigation for the future can successfully coexist with growth in the present. Proactively combatting the effects of climate change is the smart thing to do -- both today and tomorrow.</p>
-        <a href="#sealevel">
-            <button type="button" class="btn btn-default btn-md"><i class="material-icons" style="vertical-align: bottom;">keyboard_arrow_down</i> Hazards: Sea Level Rise</button>
-        </a>
-      </div>
-    </section>
-
     <!-- Image Section - set the background image for the header in the line below -->
     <section class="py-5 bg-image-full" style="background-image: url('https://images.unsplash.com/photo-1494652434328-a190cf138b93?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1568&q=80');">
       <!-- Put anything you want here! There is just a spacer below for demo purposes! -->
@@ -347,20 +285,87 @@
     <!-- Content section -->
     <section class="py-5">
       <div class="container">
-        <h1>Hazards: Sea Level Rise</h1>
-        <h2>United States Sea level rise overview: From 2018 to 2100</h2>
+         <h1>Hazards: Sea Level Rise</h1>
+         <h2>United States Sea level rise overview: From 2018 to 2100</h2>
 
+
+    <!-- Content section -->
+    <section class="py-5">
+      <div class="container">
+      
+
+        <table style="text-align:center;" cellpadding="10">
+           </td>
+            <td><i class="material-icons" style="vertical-align: bottom; color: rgba(255, 255, 255, 1);font-size: 48px;">store_mall_directory</i>
+            </td>         
+
+            <td><i class="material-icons" style="vertical-align: bottom; color: rgba(255, 255, 255, 1);font-size: 48px;">sentiment_very_dissatisfied</i>
+
+            </td>
+            <td><i class="material-icons" style="vertical-align: bottom; color: rgba(255, 255, 255, 1);font-size: 48px;">local_atm</i>
+            </td>
+
+            <td><i class="material-icons" style="vertical-align: bottom; color: rgba(255, 255, 255, 1);font-size: 48px;">insert_chart</i>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="lead">13,554 homes</p>
+              <p>At risk due to the sea level rise in 2030o</p>
+            </td>
+            <td>
+              <p class="lead">33,430 populatione</p>
+              <p>Currently housed in risk</p>
+            </td>
+            <td>
+              <p class="lead">$10 billion</p>
+              <p>Will be lost by chronic floods</p>
+            </td>
+            <td>
+              <p class="lead">$100 million</p>
+              <p>Cost of properties tax at risk</p>
+            </td>
+          </tr>
+        </table>
+        <br>
+        <p>Climate change lead to the sea level rise hazard, countless coastal residents, properties and economies are facing the imminent challenges. High-tide floods are becoming more frequent than before because of the climate change, while the chronic flooding issue is jeopardizing hundreds of U.S. coastal communities still. For the future urban development, it is essential to consider to avoid more financial losses for individual house owners and public infrastructure investment for coastal areas. </p>
+
+
+
+
+        <h3> Sea level rise in Unites States </h3>
+
+        <p>Millions of coastal community’s residents will face the disruptive high-tide flood, the flood cause by sea level rise will soon expand to farther inland. The comparison diagrams indicate the number of properties are at risk by the rise of sea level rise throughout the U.S from 2018 to 2100. By 2100, the number of at risk home will expands to more than 1 million. on the other hand,  these results did not include future development such as homes, nor urban infrastructures in our projection. While comparing to California, the number of properties at risk does not present as a extrem growth as Florida.  </p>
+
+
+        <!-- graphic 1--Containers for D3 visualization! -->
         <iframe src="https://vida.io/embed/Ay85wYTmjHhCHyRmF" width="1000" height="800" seamless frameBorder="0" scrolling="no"></iframe>
+
+       <!-- graphic 2 -->
+
+        <p>       </p>
+        <br>
+
+        <h3> California vs. Florida </h3>
+        <p>Urban density consider as the key factor which has strong impact the increase rate of damage cause by sea level rise. On the east coast of US, houses and public infrastructures were developed close to the coastlines whereas on the west coast, many of the cities are decentralized, therefore are more resilient to the potential risks. For the further development, it is a task for planners to think about how to deal with the sea level rise issues while keeping the adjacency to the pleasant coastal location. </p>
+        <iframe src="https://datawrapper.dwcdn.net/PsNKc/2/" width="500" height="500" seamless="" frameborder="0" scrolling="no"></iframe>
+        <iframe src="https://datawrapper.dwcdn.net/rYZcT/2/" width="500" height="500" seamless="" frameborder="0" scrolling="no"></iframe>
+        <p>       </p>
+        <br>
+        
+        <!-- graphic 3 -->
+        <h3> Billions of dollors properties and thousands of population at risk </h3>
+        <p> Looking into California, appropriately conservative projection to estimating risk from coastal properties financial losses and population at risk through 2030 to 2100. 10 most risky communities that are facing different level of financial losses and population who owns properties facing flooding issue. There is an exponential growth from both financial and population perspectives on San Mateo. However, as Central coast got a exponential growth on financial lost but linear growth on population, it is necessary for us to realize the crucial determinants of what factor lead to those different growth, and response to the coastal life.</p>
+        <br>
+
+        <iframe src="https://datawrapper.dwcdn.net/l4LHp/2/" width="500" height="500" seamless="" frameborder="0" scrolling="no"></iframe>
+
+        <iframe src="https://datawrapper.dwcdn.net/03ns1/2/" width="500" height="500" seamless="" frameborder="0" scrolling="no"></iframe>
+
+
+
         <li> <a href="https://www.ucsusa.org/global-warming/global-warming-impacts/sea-level-rise-chronic-floods-and-us-coastal-real-estate-implications#.XDzVzc9Kh0s"> Source </a> </li>
-        <iframe src="https://vida.io/embed/WSMYRNiWyuFDvoBDi" width="960" height="1000" seamless frameBorder="0" scrolling="no"></iframe>
-        <ul> 
-        <iframe src="https://datawrapper.dwcdn.net/PsNKc/1/" width="500" height="500" seamless="" frameborder="0" scrolling="no"></iframe>
-        <iframe src="https://datawrapper.dwcdn.net/rYZcT/1/" width="500" height="500" seamless="" frameborder="0" scrolling="no"></iframe>
 
-
-
-        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, suscipit, rerum quos facilis repellat architecto commodi officia atque nemo facere eum non illo voluptatem quae delectus odit vel itaque amet.</p>
         <a href="#costs">
             <button type="button" class="btn btn-default btn-md"><i class="material-icons" style="vertical-align: bottom;">keyboard_arrow_down</i> Next</button>
         </a>
