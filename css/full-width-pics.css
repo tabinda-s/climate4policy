@@ -4,6 +4,12 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-full-width-pics/blob/master/LICENSE)
  */
 
+/*!
+ * Start Bootstrap - Full Width Pics (https://startbootstrap.com/template-overviews/full-width-pics)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-full-width-pics/blob/master/LICENSE)
+ */
+
 body {
   padding-top: 54px;
   background-color:#000;
@@ -18,7 +24,7 @@ img {
 
 @media (min-width: 992px) {
   body {
-    padding-top: 54px;
+    padding-top: 56px;
   }
 }
 
@@ -35,12 +41,12 @@ a:hover {
 }
 
 .title {
-	height: 85vh;
-	display: table-cell;
-	vertical-align: middle;
-	text-align: center;
-	padding-left: 50px;
-	padding-right: 50px;
+  height: 85vh;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 div.spacer
@@ -51,8 +57,8 @@ div.spacer
 }
 
 #homebox {
-	background: rgba(0,0,0,0.4);
-	padding: 20px;
+  background: rgba(0,0,0,0.4);
+  padding: 20px;
   padding-bottom: 10px;
 }
 
@@ -101,76 +107,38 @@ div.spacer
 }
 
 .climate_images {
-  width: 50%;
+  
   filter: none;
   margin: 0 auto;
 }
 
-/* Play with this class for centering visuals */
 
-.center-viz {
-  margin: auto;
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.twocolumnimages {
+  float: left;
+  filter: none;
+  width: 50%;
+  padding: 1px;
 }
 
-/* For big, white-colored Google icons */
-
-#bigicon {
-  vertical-align: bottom;
-  color: rgba(255, 255, 255, 1);
-  font-size: 48px;
+/* Clear floats after image containers */
+.rowtoclear::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
-/* CSS for GHG-GDP D3 viz below */
-
-.axis path,
-.axis line, 
-.axis1 path,
-.axis1 line {
-  fill: none;
-  stroke: #E6E7E8;
-  shape-rendering: crispEdges;
+.blockimages {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
 }
 
-.x.axis path, .x.axis1 path {
-  display: none;
+.rotate90 {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
 }
-
-.line {
-  fill: none;
-  stroke-width: 1.5px;
-}
-
-.legend-box {
-  cursor: pointer;  
-}
-
-#mouse-tracker {
-  stroke: #E6E7E8;
-  stroke-width: 1px;
-}
-
-.hover-line { 
-  stroke: #E6E7E8;
-  fill: none;
-  stroke-width: 1px;
-  left: 10px;
-  shape-rendering: crispEdges;
-  opacity: 1e-6;
-}
-
-.hover-text {
-  stroke: none;
-  font-size: 30px;
-  font-weight: bold;
-  fill: #000000;
-}
-
-.tooltip {
-  font-weight: normal;
-}
-
-.brush .extent {
-  stroke: #FFF;
-  shape-rendering: crispEdges;
-}
-
