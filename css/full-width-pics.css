@@ -73,7 +73,9 @@ div.spacer
 
 #maxmean {
   filter: none;
-  margin: 0 auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   width:70%;
 }
 
