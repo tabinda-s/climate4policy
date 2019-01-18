@@ -85,7 +85,8 @@ div.spacer
 
 .boxformaps {
   float: left;
-  width: 40%;
+  text-align: center;
+  width: 50%;
   padding: 5px;
   padding-bottom: 10px;
 }
@@ -106,13 +107,14 @@ div.spacer
   filter: grayscale(40%);
 }
 
+#ca-map {
+  max-width: 100%;
+}
+
 .climate_images {
-  
   filter: none;
   margin: 0 auto;
 }
-
-
 
 /* Three image containers (use 25% for four, and 50% for two, etc) */
 .twocolumnimages {

@@ -120,7 +120,7 @@
 
         
         <p class="lead"> Shifts in climate indicators show how the state has been affected by climate change.</p>
-        <p>California is getting warmer overall. While we only have a snapshot of data, we can still easily observe the gradual change. Normalizing this by county, we observe a mean change of 1.16 degrees F for the time period. This effect is statistically significant at the 10% level.</p>
+        <p>California is getting warmer overall. While we only have a snapshot of data, we can still easily observe the gradual change. Normalizing this by county, we observe a mean change of 1.16 degrees F for the time period.</p>
         <p>However, this overall trend hides substantial heterogeneity as some counties and some months have seen larger changes than others. </p> 
         <br>
         
@@ -141,13 +141,14 @@
 
         
         <div class="clearfix">
+          
           <div class="boxformaps">
-          <p class="lead"> Precipitation </p>
-          <img class="climate_images" src="./final_analysis/output/ca_precip_black.png" alt="Average change to mean temperature per month per county in California">
+          <p class="lead">Precipitation</p>
+          <img class="climate_images" id="ca-map" src="./final_analysis/output/ca_precip_black.png" alt="Average change to mean temperature per month per county in California">
           </div>
           <div class="boxformaps">
-          <p class="lead"> Max Temp </p>
-          <img class="climate_images" src="./final_analysis/output/ca_maxtemp_black.png" alt="Greenhouse gas emissions vs GDP per capita in California"> 
+          <p class="lead">Max Temp</p>
+          <img class="climate_images" id="ca-map" src="./final_analysis/output/ca_maxtemp_black.png" alt="Greenhouse gas emissions vs GDP per capita in California"> 
           </div>
           
         </div>
@@ -184,12 +185,7 @@
 
         <p> In July, for instance, the max temperature which hovered around 90 degrees now regularly sits closer to 95 degrees. Already, 95 degree temperatures could pose problems for less healthy individuals, but a medium size change could have even more severe an effect in a place like San Bernadino </p>
 
-        <br>
-
         <p> With July temperatures that could already get into the mid-100s, an increase of a few degrees has meant that San Bernadino now faces max temperatures in the 110s - a daunting climate for those who have health problems and may not have access to air conditioning  </p>
-
-        <br>
-
 
         <a href="#wildfire">
             <button type="button" class="btn btn-default btn-md"><i class="material-icons" style="vertical-align: bottom;">keyboard_arrow_down</i> Hazards: Wildfire</button>
