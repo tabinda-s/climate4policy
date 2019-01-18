@@ -4,6 +4,12 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-full-width-pics/blob/master/LICENSE)
  */
 
+/*!
+ * Start Bootstrap - Full Width Pics (https://startbootstrap.com/template-overviews/full-width-pics)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-full-width-pics/blob/master/LICENSE)
+ */
+
 body {
   padding-top: 54px;
   background-color:#000;
@@ -35,12 +41,12 @@ a:hover {
 }
 
 .title {
-	height: 85vh;
-	display: table-cell;
-	vertical-align: middle;
-	text-align: center;
-	padding-left: 50px;
-	padding-right: 50px;
+  height: 85vh;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 div.spacer
@@ -51,8 +57,8 @@ div.spacer
 }
 
 #homebox {
-	background: rgba(0,0,0,0.4);
-	padding: 20px;
+  background: rgba(0,0,0,0.4);
+  padding: 20px;
   padding-bottom: 10px;
 }
 
