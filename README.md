@@ -1,17 +1,18 @@
 ## README file for B4
 
-Climate Change in California
+## Climate Change in California
 
 Below is a summary of how we went about implementing this project.
 
-Climate indicators section:
+### Climate indicators section:
  
 I found the data from PRISM climate group at Oregon State during my search for high quality climate data. I saw that it had data on max temperature, mean temperature, min temperature, and precipitation down to the county level in California for every month since 1981. However, I also observed that it was not easy to download the data in bulk.
  
 The first step I took was to see if I could use wget from the command line to download the data and append it together. I built the getprism.sh file to do that, but realized that there was a middle part of the url that changed for each data download before the csv such that using special characters {} to download multiple counties no longer worked. For that reason, we divided the 58 counties to our group members and each downloaded some. Once the files were downloaded, I was able to append them using the command line (using getprism.sh), but found later that it was better to use STATA. The main reason for this choice was that the data for each county came with latitude and longitude coordinates but did not list the county name so I had to back into that link later (I also tried to spatially join the latitude and longitude to shapefiles, but had unresolvable issues related to the projection – more on that later).
  
  
-Append and Data Cleaning with STATA
+### Append and Data Cleaning with STATA
+
 Once I had 58 csvs (1 per county) with the raw climate indicators (mean temp in month, max temp in month, precipitation in inches for month, and min temp in month) for all months over the time period of 1981-2018, I needed to read them into a single file
 I created a loop to read each of the 58 csv files and used a local variable to attach the number in which the file was read as an idnum column (the first file had an idnum equal to 1, second file idnum ==2, etc.)
 This loop created a STATA data file for each of the input csvs
