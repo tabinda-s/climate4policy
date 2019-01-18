@@ -1,4 +1,4 @@
-var margin = {top: 20, right: 200, bottom: 50, left: 50},
+var margin = {top: 20, right: 200, bottom: 20, left: 50},
     margin2 = { top: 430, right: 10, bottom: 20, left: 40 },
     width = 960 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom,
@@ -274,9 +274,9 @@ var allgroups = [
                 ]
 
 // COMMENT OUT STATIC URL WHEN VIEWING LOCALLY (my computer blocks the connection)
-d3.csv("https://tabinda-s.github.io/climate4policy/data/ghg-gdp/ghg-gdp-data.csv", function(error, data) { 
+// d3.csv("https://tabinda-s.github.io/climate4policy/data/ghg-gdp/ghg-gdp-data.csv", function(error, data) { 
 // for debug/dev purposes, revert to relative path
-// d3.csv("../data/ghg-gdp/ghg-gdp-data.csv", function(error, data) {   
+d3.csv("../data/ghg-gdp/ghg-gdp-data.csv", function(error, data) {   
   color.domain(d3.keys(data[0]).filter(function(key) { // Set the domain of the color ordinal scale to be all the csv headers except "date", matching a color to an issue
     return key !== "year"; 
   }));
