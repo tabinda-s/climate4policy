@@ -101,7 +101,8 @@ There are 3 different sets are: states, community, and zp-code. For the first se
 ### Emissions and GDP:
 
 #### Data sources
-Emissions data were from the US Energy Information Administration (EIA) in the form of an xlxs file showing annual carbon dioxide emissions broken out by state. See https://www.eia.gov/environment/emissions/state/\
+Emissions data were from the US Energy Information Administration (EIA) in the form of an xlxs file showing annual carbon dioxide emissions broken out by state. See https://www.eia.gov/environment/emissions/state/
+\
 \
 GDP per capita data were from the US Bureau of Economic Analysis (BEA). The BEA offers a downloadable zip archive of GDP by state, which includes csv files with GDP over time for each state as well as for all areas consolidated. The data set used in this analysis was pulled from a single csv that included GDP per capita for each state from 1997 through 2017. See https://www.bea.gov/data/gdp/gdp-state 
 
